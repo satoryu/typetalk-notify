@@ -1,0 +1,17 @@
+name: Typetalk Notify
+description: An action to notify to Typetalk topic
+
+inputs:
+  token:
+    description: Typetalk API Token
+    required: true
+  topic_id:
+    description: Id of the topic to be notified
+    required: true
+  message:
+    description: Message to be sent
+    required: true
+
+runs:
+  using: node12
+  main: index.js
