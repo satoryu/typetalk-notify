@@ -1,9 +1,8 @@
 name: Release Announce
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   announce:
