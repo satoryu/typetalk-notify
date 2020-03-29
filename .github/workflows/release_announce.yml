@@ -9,7 +9,7 @@ jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
-      - uses: satoryu/typetalk-notify
+      - uses: satoryu/typetalk-notify@master
         with:
           token: ${{ secrets.TYPETALK_TOKEN }}
           topic_id: 165952
