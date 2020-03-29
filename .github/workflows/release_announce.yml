@@ -1,0 +1,16 @@
+name: Release Announce
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  announce:
+    steps:
+      - uses: satoryu/typetalk-notify@v0.0.1
+        with:
+          token: ${{ secrets.TYPETALK_TOKEN }}
+          topic_id: 165952
+          message: |
+          ${{ github.repository }} ${{ github.ref }} has been released :tada: :white_flower:
