@@ -19,6 +19,7 @@ try {
   let req = https.request(options, function(res) {
     res.on('data', function(chunk) {
       core.debug(chunk)
+      core.setOutput('output', chunk)
     })
   })
 
