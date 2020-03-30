@@ -1,5 +1,9 @@
 name: Typetalk Notify
+author: Tatsuya Sato
 description: An action to notify to Typetalk topic
+branding:
+  icon: bell
+  color: orange
 
 inputs:
   token:
