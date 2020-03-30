@@ -33,6 +33,5 @@ jobs:
       with:
         token: ${{ secrets.TYPETALK_TOKEN }}
         topic_id: 165952  # Replace your topic's id
-        message: |
-          ${{ github.repository }} ${{ github.ref }} has been released :tada: :white_flower:
+        message: "${{ github.repository }} ${{ github.ref }} has been released :tada: :white_flower:"
 ```
