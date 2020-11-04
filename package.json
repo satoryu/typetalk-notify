@@ -2,13 +2,20 @@
   "name": "typetalk-notify",
   "version": "0.0.1",
   "description": "A GitHub Acion to notify Typetalk channel",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "1.2.1"
+    "@actions/core": "1.2.1",
+    "axios": "^0.21.0",
+    "tiny-json-http": "^7.3.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.1",
+    "jest": "^26.6.2",
+    "nock": "^13.0.4"
   }
 }
