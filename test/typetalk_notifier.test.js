@@ -3,6 +3,10 @@ const notifyToTypeTalkTopic = require('../src/typetalk_notifier')
 
 nock.disableNetConnect()
 
+afterEach(() => {
+  nock.cleanAll()
+})
+
 test('sends typetalk topic API', async () => {
   const topicId = '1997'
   const message = 'Put your kitsune up'
