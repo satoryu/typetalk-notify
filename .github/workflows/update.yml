@@ -13,4 +13,4 @@ jobs:
         with:
           token: ${{ secrets.TYPETALK_TOKEN }}
           topic_id: ${{ secrets.TYPETALK_TOPIC_ID }}
-          message: "${{ github.repository }} ${{ github.ref }} has been updated :new:
+          message: "${{ github.repository }} ${{ github.ref }} has been updated :new:"
