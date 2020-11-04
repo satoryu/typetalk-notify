@@ -11,7 +11,7 @@
   "author": "Tatsuya Sato",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "1.2.1",
+    "@actions/core": "1.2.6",
     "axios": "^0.21.0",
     "tiny-json-http": "^7.3.0"
   },
