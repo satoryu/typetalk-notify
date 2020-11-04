@@ -4,9 +4,11 @@
   "description": "A GitHub Acion to notify Typetalk channel",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "ncc build index.js"
   },
-  "author": "",
+  "author": "Tatsuya Sato",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "1.2.1",
