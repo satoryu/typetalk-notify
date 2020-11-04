@@ -1,5 +1,7 @@
 # Typetalk notify
 
+![CI](https://github.com/satoryu/typetalk-notify/workflows/CI/badge.svg?branch=master)
+
 This action is for notifying any events like opening new issue on a github repository to Typetalk topic.
 
 ## Inputs
