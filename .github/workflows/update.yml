@@ -1,15 +1,16 @@
-name: Release Announce
+name: Update master branch
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
 
 jobs:
-  announce:
+  notify:
     runs-on: ubuntu-latest
     steps:
       - uses: satoryu/typetalk-notify@master
         with:
           token: ${{ secrets.TYPETALK_TOKEN }}
           topic_id: ${{ secrets.TYPETALK_TOPIC_ID }}
-          message: "${{ github.repository }} ${{ github.ref }} has been released :tada: :white_flower:"
+          message: "${{ github.repository }} ${{ github.ref }} has been updated :new:
