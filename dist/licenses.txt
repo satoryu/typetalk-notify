@@ -1,0 +1,5 @@
+@actions/core
+MIT
+
+tiny-json-http
+Apache-2.0
