@@ -31,7 +31,7 @@ on:
 
 jobs:
   steps:
-    - uses: satoryu/typetalk-notify@v0.0.2
+    - uses: satoryu/typetalk-notify@v0.0.3
       with:
         token: ${{ secrets.TYPETALK_TOKEN }}
         topic_id: 165952  # Replace your topic's id
