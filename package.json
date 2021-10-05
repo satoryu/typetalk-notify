@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "1.2.6",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "tiny-json-http": "^7.3.0"
   },
   "devDependencies": {
