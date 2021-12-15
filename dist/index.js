@@ -404,16 +404,20 @@ exports.toCommandValue = toCommandValue;
 /***/ }),
 
 /***/ 177:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __webpack_require__(186);
 const typetalkToken = core.getInput('token');
 const topicId = core.getInput('topic_id');
 const message = core.getInput('message');
-const notifyToTypeTalkTopic = __webpack_require__(538);
-notifyToTypeTalkTopic(topicId, message, typetalkToken)
+const typetalk_notifier_1 = __importDefault(__webpack_require__(538));
+(0, typetalk_notifier_1.default)(topicId, message, typetalkToken)
     .catch((error) => { core.setFailed(error.message); });
 
 
