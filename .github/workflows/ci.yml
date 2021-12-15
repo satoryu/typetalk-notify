@@ -16,7 +16,7 @@ jobs:
       - run: npm run build
       - run: ./.github/workflows/verify_dist_index.js.sh
         shell: bash
-      - uses: satoryu/typetalk-notify@${{ github.sha }}
+      - uses: ./
         with:
           token: ${{ secrets.TYPETALK_TOKEN }}
           topic_id: ${{ secrets.TYPETALK_TOPIC_ID }}
