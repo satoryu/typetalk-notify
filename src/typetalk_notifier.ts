@@ -1,6 +1,6 @@
 const tiny = require('tiny-json-http')
 
-function notifyToTypeTalkTopic(topicId, message, token) {
+export default function(topicId, message, token) {
   const options = {
       url: `https://typetalk.com/api/v1/topics/${topicId}`,
       headers: {
@@ -12,5 +12,3 @@ function notifyToTypeTalkTopic(topicId, message, token) {
 
   return tiny.post(options)
 }
-
-module.exports = notifyToTypeTalkTopic
