@@ -420,12 +420,13 @@ notifyToTypeTalkTopic(topicId, message, typetalkToken)
 /***/ }),
 
 /***/ 538:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tiny = __webpack_require__(370);
-module.exports = function (topicId, message, token) {
+function default_1(topicId, message, token) {
     const options = {
         url: `https://typetalk.com/api/v1/topics/${topicId}`,
         headers: {
@@ -435,7 +436,8 @@ module.exports = function (topicId, message, token) {
         data: { message }
     };
     return tiny.post(options);
-};
+}
+exports.default = default_1;
 
 
 /***/ }),

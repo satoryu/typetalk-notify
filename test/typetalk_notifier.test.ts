@@ -1,5 +1,5 @@
 const nock = require('nock')
-const notifyToTypeTalkTopic = require('../src/typetalk_notifier')
+import notifyToTypeTalkTopic from '../src/typetalk_notifier'
 
 nock.disableNetConnect()
 
