@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "ncc build index.js --license licenses.txt"
+    "build": "ncc build index.ts --license licenses.txt"
   },
   "author": "Tatsuya Sato",
   "license": "ISC",

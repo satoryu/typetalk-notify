@@ -6,8 +6,5 @@ const message = core.getInput('message')
 
 const notifyToTypeTalkTopic = require('./src/typetalk_notifier')
 
-try {
-  notifyToTypeTalkTopic(topicId, message, typetalkToken)
-} catch(error) {
-  core.setFailed(error.message)
-}
+notifyToTypeTalkTopic(topicId, message, typetalkToken)
+  .catch((error) => { core.setFailed(error.message)})
