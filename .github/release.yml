@@ -1,0 +1,14 @@
+changelog:
+  categories:
+    - title: Updates
+      labels:
+        - '*'
+      exclude:
+        labels:
+          - dependencies
+        authors:
+          - dependabot
+
+    - title: Dependencies
+      labels:
+        - dependencies
